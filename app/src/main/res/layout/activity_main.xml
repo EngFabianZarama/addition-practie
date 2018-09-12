@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="165dp"
+        android:layout_height="126dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="monospace"
+        android:onClick="btnStart"
+        android:text="Start!"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/colorAccent"
+        android:onClick="btnAnswer"
+        android:text="Button3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="128dp"
+        android:background="#40ff53"
+        android:onClick="btnAnswer"
+        android:text="Button5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/btnStart1"
+        app:layout_constraintTop_toTopOf="@+id/btnStart1" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="371dp"
+        android:layout_height="421dp"
+        android:background="#40ff53"
+        android:onClick="btnAnswer"
+        android:text="Button5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <Button
+        android:id="@+id/btnStart2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="#4056ff"
+        android:onClick="btnAnswer"
+        android:text="Button4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnStart1"
+        app:layout_constraintTop_toTopOf="@+id/btnStart1" />
+
+    <Button
+        android:id="@+id/btnStart4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="128dp"
+        android:background="#ff7940"
+        android:onClick="btnAnswer"
+        android:text="Button6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnStart3"
+        app:layout_constraintTop_toTopOf="@+id/btnStart2" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:layout_marginTop="26dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnNumberOfAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#e2e533"
+        android:text="0 / 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="btnTimer"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="btnStart"
+        android:text="Reset"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
